@@ -1,0 +1,2 @@
+Placed CSV file on AWS and found clusters on user provided columns using K-Means clustering. Showed time to run,
+centroids for the clusters, and number of points in each cluster. Created a chart, bar graph and scatter plot.

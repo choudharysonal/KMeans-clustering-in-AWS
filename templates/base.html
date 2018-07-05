@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Redis Cache AWS </title>
+
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid black;
+
+        }
+
+        th, tr, td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        tr:hover{background: #f5f5f5;}
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+            text-decoration: none;
+        }
+
+        .input_box{
+            width: 80%;
+            border: 1px solid black;
+            height: auto;
+            padding: 10px;
+            margin-left: 10%;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 8px black ;
+        }
+
+        .result_box{
+            width: 100%;
+            border: 1px solid black;
+            height: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<ul>
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="/kmeans"> K-Means </a></li>
+  <li><a href="/kmeansinput"> K-Means Input </a></li>
+  <li><a href="/kmeansgraph"> K-Means Graph </a></li>
+
+
+</ul>
+<div> <h2 class="text-center">Welcome to the Application By: </h2> <h3 class="text-center"> Nishank Bhatnagar </h3> <h4 class="text-center"> 1001397098</h4></div>
+{% block content %}{% endblock %}
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
+</body>
+</html>

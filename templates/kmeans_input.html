@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="input_box">
+    <h3 class="text-center"> Press the button to Process the query </h3>
+    <form action="" method="post" enctype="multipart/form-data">
+        <label for=""> Column one </label><input type="text" name="col1"></input>
+        <label for=""> Column Two </label><input type="text" name="col2"></input>
+        <label for=""> K Value </label><input type="text" name="kvalue"></input>
+        <input type="submit" value="Process" class="btn-info center-block">
+    </form>
+</div>
+<div>
+ <h3> Result returned in </h3><h1> <span> {{ ttr }} ms</span></h1>
+</div>
+<div class="result_box">
+    <div>
+        <h1> Centroids : </h1> <h3> {{ datainfo  }} </h3>
+        <h1> Cluster Points in Column 1 : </h1> <h3> {{ clusterpointsOne }} </h3>
+        <h1> Cluster Points in Column 2 : </h1> <h3> {{ clusterpointsTwo }} </h3>
+        <h1> Length of Cluster points : </h1> <h3> {{ lenofcluster }} </h3>
+    </div>
+</div>
+{% endblock %}

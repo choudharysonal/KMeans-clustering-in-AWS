@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="input_box">
+    <h3 class="text-center"> Press the button to Process the query </h3>
+    <form action="" method="post" enctype="multipart/form-data">
+        <input type="submit" value="process" class="btn-info center-block">
+    </form>
+    <h2> Total num of entries : {{ numOfEnt }}</h2>
+</div>
+{% endblock %}

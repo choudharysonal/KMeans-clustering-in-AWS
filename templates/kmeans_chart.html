@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="input_box">
+    <h3 class="text-center"> Press the button to Process the query </h3>
+    <form action="" method="post" enctype="multipart/form-data">
+        <label for=""> Column One </label> <input type="text" name="col1" placeholder="Add Column 1"> </input>
+        <label for=""> Column Two </label> <input type="text" name="col2" placeholder="Add Column 2"> </input>
+        <label for=""> k value  </label> <input type="text" name="kvalue" placeholder="Add KValue"> </input>
+        <input type="submit" value="Search" class="btn-info center-block">
+    </form>
+</div>
+<div class="result_box">
+</div>
+    <div>
+    {% if plot_div %}
+     {{ plot_div|indent(4)|safe }}
+    {% endif %}
+    </div>
+
+    {% if js_files and css_files and plot_script %}
+    {{ js_files|indent(4)|safe }}
+
+    {{ css_files|indent(4)|safe }}
+
+    {{ plot_script|indent(4)|safe }}
+    {% endif %}
+{% endblock %}
